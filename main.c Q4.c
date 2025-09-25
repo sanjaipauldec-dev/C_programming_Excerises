@@ -1,13 +1,14 @@
 #include <stdio.h>
 int main()
-{
-	int a,b;
-	printf("the difference between two numbers ");
-	scanf("%d%d",&a,&b);
-	int n=a-b;
-	if(n%2==0)
-	printf("even %d\n",n);
-	else
-	printf("odd %d\n",n);
-	return 0;                                     
+ {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    if (ch >= '0' && ch <= '9') {
+        printf("The character '%c' is a digit.\n", ch);
+    } else {
+        printf("The character '%c' is not a digit.\n", ch);
+    }
+
+    return 0;
 }
